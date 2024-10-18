@@ -1,0 +1,222 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+
+header, nav, main,footer{
+    /*width: 906px;*/
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+header{
+	height: auto;
+	background-color: #CE7095;
+    color: #F7F1E1;
+    text-align: center;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Lobster", sans-serif;
+}
+
+h1{
+   	 font-family: "Lobster", sans-serif;
+	font-family: "Open Sans", sans-serif;
+}
+
+nav{
+    height: 80px;
+    background-color: #FFB2C1;
+    color: #F7F1E1;
+    
+    
+    
+}
+
+main{
+    background-color: #FFDBD7;
+    height: auto;
+    padding: 80px;
+}
+
+section{
+    background-color: #F7F1E1; 
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;;
+    margin-top: 5px;
+    height: auto;
+}
+
+
+ul{
+    list-style: none;
+    text-align:center;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+                 
+ }
+
+
+a{
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #855E6E;
+}
+
+nav ul li:hover{
+    background-color: #855E6E;
+    
+}
+
+nav ul li a:hover{
+    color: #F7F1E1;
+}
+
+
+ 
+footer{
+    background-color: #CE7095;
+    text-align: center;
+     color: #F7F1E1;
+    font-size: 14px;
+}
+
+h2{
+    text-align: left;
+}
+
+nav ul li{
+    width: 100px;
+    background-color: #FFDBD7;
+    border-width: 4px;
+    border-color:#CE7095;
+    border-style: solid;
+    display: inline-block;
+    text-align:center;
+    color: #855E6E;
+    padding: 7px;
+
+}
+        
+img{
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+#ciudadnoche{
+    width: 280px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 0px;
+    
+}
+
+#ciudad{
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    padding: auto;
+    margin-top: 0px;
+}
+
+
+main nav {
+                   
+    width: 800px;
+     padding: 30px;
+     text-align: center;
+    color: #F7F1E1;
+    background-color: transparent;
+     
+               }
+
+main nav ul li {
+    background-color: #FFB2C1;
+}
+
+#ico{
+    width: 35px;
+    
+}
+
+#fondo_seccion{
+    background-image: url("../Medios/audio/imagenes/Coraline4.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:#CE7095;
+
+    
+}
+#filtros_imagen{
+    text-align: center;
+}
+
+#filtros_imagen img{
+    display: inline-block;
+    width: auto;
+    height: 35%;
+    padding: 10px;
+}
+
+#img1{
+    filter: brightness(150%);
+    
+}
+
+#img2{
+    filter: contrast(200%);
+}
+
+#img3{
+    filter: grayscale(100%);
+}
+
+#img4{
+    filter: invert(100%);
+}
+
+#img5{
+    filter: opacity(50%);
+}
+
+#img6{
+    filter: sepia(100%);
+}
+#img7{
+    filter: saturate(150%);
+}
+#img8{
+    filter: blur(2px);
+    
+}
+
+#img9{
+    filter: drop-shadow(10px 15px  10px lightpink);
+}
+
+#img10{
+    filter: contrast(150%) blur(2px);
+}
+
+#img11{
+    filter: hue-rotate(120deg);
+}
+
