@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+    <head>
+        <title> tablas en html </title>
+        <link rel="stylesheet" href="../css/style%20page.css" type="text/css">
+        <style type="text/css"> 
+            #table_uno{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: #855E6E;
+                
+                border-style: solid;
+                border-color:#855E6E;
+                border-width: 5px;
+                border-spacing: 5px;
+            }
+            
+            #table_uno th{
+                background-color:#855E6E;
+                color: #FFDBD7;
+             }
+            
+            #table_uno td{
+                text-align: left;
+                border-style: solid;
+                border-color: #855E6E;
+                border-top-width: 3px;
+                border-radius: 5px;
+                margin: 10px;
+                background-color: #FFB2C1;
+            
+                
+            }
+            
+            
+            /*#tabla2 td {
+                color:#F7F1E1;
+                height: 50px;
+                padding: 20px;
+            }
+            
+            
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                
+            } */
+            
+            .tabla_dos{
+                width: 800px;
+                border-collapse: collapse;
+                border-color: #855E6E; 
+                color:#F7F1E1;
+                border-style: solid;
+                text-align: center;
+                margin: 0 auto;
+                
+                border-width: 5px;
+                border-spacing: 5px;
+            }
+            
+            .tabla_dos td, tabla_dos th{
+                width: 150;
+                border-color: #F7F1E1;
+                padding: 10px;
+                border-style: dashed;    
+            }
+            
+            #tabla2{
+                background-color: #FFB2C1;
+                border-style: solid;
+                border-color:#855E6E;
+                border-width: 5px;
+                border-spacing: 5px; 
+            }
+            
+            #tabla2 th{
+                background-color:#855E6E;
+                color: #FFDBD7;
+                 border-color: #F7F1E1;
+             }
+            
+            #tabla3{
+                width: 100%;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 4px;
+            
+            }
+            
+            #tabla3 tr:nth-child(even){
+                background-color: #FFB2C1;
+            }
+            
+            #tabla3 tbody tr:nth-child(odd){
+                background-color: #CE7095;
+                color: #F7F1E1;
+                
+            }
+            
+            #tabla3 thead tr{
+                background-color: #855E6E;
+                color: #F7F1E1;
+                
+            }
+            
+            
+            .tabla_hover{
+                width: 100%;
+                margin: 0 auto;
+                background-color: #FFB2C1;
+                border-style: solid;
+                border color: #855E6E;
+                border-width: 4px; 
+            }
+            
+            .tabla_hover th{
+                background-color:#855E6E;
+                color: #F7F1E1;
+                
+            }
+            .tabla_hover td, .tabla_hover th{
+                border-color: #F7F1E1;
+                padding: 2px;
+                border-style: solid;
+                border-spacing: 0px;
+            }
+            
+            .tabla_hover td:hover{
+                background-color:#CE7095;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header> TABLAS EN HTML </header>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="Listas.html">Listas </a> </li>
+                <li> <a href="enlaces.html"> Enlaces </a> </li>
+                <li> <a href="#"> Tablas </a> </li>
+                <li> <a href="imagenes.html">  Imagenes </a></li>
+                <li> <a href="audio.html">  Audio  </a> </li>
+                <li> <a href="video.html"> Video </a> </li>
+                <li> <a href="#"> Formulario </a> </li>   
+            </ul>
+        </nav>
+        <main> 
+        <section style="overflow-x: auto">
+        <h2> Datos De Películas Favoritas </h2>
+            <p> Esta tabla es para presentar los datos de una selección de algunas de mis películas favoritas. Cada una me ha gustado espacielmente, ya sea por su trama, sus personajes o la emoción que me provocaron. A continuación, en la tabla se encontrará el título, el año de estreno, el director, el género de la pélicula y su calificación. </p>
+            
+            <table id="table_uno" class="table_uno">
+                <thead> 
+                    <tr>
+                        <th> Nombre </th>
+                        <th> Año </th>
+                        <th> Director </th>
+                        <th> Género </th>
+                        <th> Calificación </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Harry Potter y el Prisionero de Azkaban </td>
+                        <td> 2004 </td>
+                        <td> Alfonso Cuarón </td>
+                        <td> Fantasía </td>
+                        <td style="text-align: center">4.4/5 </td>
+                    </tr>
+                    <tr>
+                        <td>Harry Potter y el Calíz de Fuego </td>
+                        <td> 2005 </td>
+                        <td> Mike Newell </td>
+                        <td> Fantasía </td>
+                        <td style="text-align: center"> 4.6/5 </td>
+                    </tr>
+                     <tr>
+                        <td>La Cumbre Escarlata </td>
+                        <td> 2016 </td>
+                        <td> Guillermo del Toro </td>
+                        <td> Drama, Terror, Romance </td>
+                        <td style="text-align: center"> 3.6/5 </td>
+                    </tr>
+                    <tr>
+                        <td>El Laberinto Del Fauno </td>
+                        <td> 2006 </td>
+                        <td> Guillermo del Toro </td>
+                        <td> Fantasía, Terror </td>
+                        <td style="text-align: center">4.7/5 </td>
+                    </tr>
+                    <tr>
+                        <td>El Orién de Los Guardianes </td>
+                        <td> 2012</td>
+                        <td> Peter Ramsey  </td>
+                        <td> Aventura, Animación, Familia </td>
+                        <td style="text-align: center">4.2/5 </td>
+                    </tr>
+                     <tr>
+                        <td>La Sirenita </td>
+                        <td> 2023 </td>
+                        <td>  Rob Marshall  </td>
+                        <td> Aventura, Familia, Fantasía </td>
+                        <td style="text-align: center">2.1/5 </td>
+                    </tr>
+                </tbody>
+                <tfoot> </tfoot>
+            </table>
+        </section>
+            
+        <section style="overflow-x: auto">
+            <h2> Series Favoritas </h2>
+                <p>Esta tabala es para presentar los datos de algunas de mis series más favoritas. Cada una de estas historias ha capturado mi atención y ha dejado una impresión duradera, ya sea por su narrativa, sus personajes o su originalidad. En la siguiente tabla, se encontrará el título, el género, el añó de emisión y finalización, así como la calificación de cada una.Por último tambien se muestra la duración aproximada de cada capitulo de las series.</p>
+            <table id="tabla2" class="tabla_dos">
+                <thead>
+                    <tr> 
+                        <th style="width:200px;"> Nombre </th>
+                        <th style="width:150px;"> Género </th>
+                        <th style="width:200px;" colspan="2"> Año Emisión y Finalización </th>
+                        <th style="width:150px;"> Calificación </th>
+                    </tr>
+                </thead>
+                
+                
+                <tbody>
+                    <tr>
+                        <td> Supernatual </td>
+                        <td style="text-align: center; padding:0px;"> Drama, Fantasía, Terror</td>
+                        <td> 2005 </td>
+                        <td> 2020 </td>
+                        <td syle="text-align:center; padding 0px; backgroung-color:#CE7095;"> 4.4/6 </td>
+                    </tr>
+                    <tr>
+                        <td> Flash </td>
+                        <td style="text-align: center; padding:0px;"> Acción, Fantasía</td>
+                        <td > 2014 </td>
+                        <td> 2023 </td>
+                        <td syle="text-align:center; padding 0px; backgroung-color:#CE7095;"> 4.2/5 </td>
+                    </tr>
+                    <tr>
+                        <td> Merlín </td>
+                        <td style="text-align: center; padding:0px;"> Drama, Fantasía</td>
+                        <td> 2008 </td>
+                        <td> 2012 </td>
+                        <td syle="text-align:center; padding 0px; backgroung-color:#CE7095;"> 4.0/5 </td>
+                    </tr>
+                    <tr>
+                        <td> Guardian </td>
+                        <td style="text-align: center; padding:0px"> Misterio, Fantasía, Amistad</td>
+                        <td> 2018 </td>
+                        <td> 2020 </td>
+                        <td syle="text-align:center; padding 0px; backgroung-color:#CE7095;"> 9.5/10 </td>
+                    </tr>
+                    <tr>
+                        <td> Mad Dog </td>
+                        <td style="text-align: center; padding:0px"> Drama, Crimen, Thriller</td>
+                        <td> 2017 </td>
+                        <td> 2017 </td>
+                        <td syle="text-align:center; padding 0px; backgroung-color:#CE7095;"> 9.6/10 </td>
+                    </tr>
+                </tbody>
+                
+                <tfoot> 
+                    <tr> 
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td style="text-align: center"> Duración </td>
+                        <td class="celda_centrada" style="background-color: #855e6E"> 40 min aprox </td>
+                    </tr> </tfoot>
+            </table>
+        </section>
+            
+        <section style="overflow-x: auto">
+            <h2> Series Favoritas </h2>
+                <p>Esta tabala es para presentar los datos de algunas de mis series más favoritas. Cada una de estas historias ha capturado mi atención y ha dejado una impresión duradera, ya sea por su narrativa, sus personajes o su originalidad. En la siguiente tabla, se encontrará el título, el género, el añó de emisión y finalización, así como la calificación de cada una.Por último tambien se muestra la duración aproximada de cada capitulo de las series.</p>
+            <table id="tabla3" class="tabla3">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Deporte</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lourdes Díaz Salamanca</td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>2215151651</td>
+                        <td>lulu.diáz@gmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Jo´se Luis Peréz Dominguez</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>22258465</td>
+                        <td>guicho21@hotmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Jo´se Luis Peréz Dominguez</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>22258465</td>
+                        <td>guicho21@hotmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>José Luis Peréz Dominguez</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>22258465</td>
+                        <td>guicho21@hotmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Pablo Mendez Cabrera</td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>22258465</td>
+                        <td>pablo_start@gamil.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Mariana Gonzales Gonzales</td>
+                        <td>20</td>
+                        <td>Natación</td>
+                        <td>22258465</td>
+                        <td>mariana.gonzales@yahoo.com</td>
+                    </tr>
+                    
+                     <tr>
+                        <td>Graciela hernandez Peréz</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>22258465</td>
+                        <td>grace_lindaQyahoo.com</td>
+                    </tr>
+                    
+                     <tr>
+                        <td>José fernandez Jimenez</td>
+                        <td>20</td>
+                        <td>Karate</td>
+                        <td>22258465</td>
+                        <td>pepe.fer@hotmail.com</td>
+                    </tr>
+                    
+                     <tr>
+                        <td>Montserrat Camacho Jimenez</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>22258465</td>
+                        <td>montse.camacho@gmail.com</td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+            
+        <section>
+            <h2> Series Favoritas </h2>
+                <p>Esta tabala es para presentar los datos de algunas de mis series más favoritas. Cada una de estas historias ha capturado mi atención y ha dejado una impresión duradera, ya sea por su narrativa, sus personajes o su originalidad. En la siguiente tabla, se encontrará el título, el género, el añó de emisión y finalización, así como la calificación de cada una.Por último tambien se muestra la duración aproximada de cada capitulo de las series.</p>
+            <table class="tabla_hover">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Deporte</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lourdes Díaz Salamanca</td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>2215151651</td>
+                        <td>lulu.diáz@gmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Jo´se Luis Peréz Dominguez</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>22258465</td>
+                        <td>guicho21@hotmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Jo´se Luis Peréz Dominguez</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>22258465</td>
+                        <td>guicho21@hotmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>José Luis Peréz Dominguez</td>
+                        <td>21</td>
+                        <td>Voleiball</td>
+                        <td>22258465</td>
+                        <td>guicho21@hotmail.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Pablo Mendez Cabrera</td>
+                        <td>19</td>
+                        <td>Football</td>
+                        <td>22258465</td>
+                        <td>pablo_start@gamil.com</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Mariana Gonzales Gonzales</td>
+                        <td>20</td>
+                        <td>Natación</td>
+                        <td>22258465</td>
+                        <td>mariana.gonzales@yahoo.com</td>
+                    </tr>
+                    
+                     <tr>
+                        <td>Graciela hernandez Peréz</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>22258465</td>
+                        <td>grace_lindaQyahoo.com</td>
+                    </tr>
+                    
+                     <tr>
+                        <td>José fernandez Jimenez</td>
+                        <td>20</td>
+                        <td>Karate</td>
+                        <td>22258465</td>
+                        <td>pepe.fer@hotmail.com</td>
+                    </tr>
+                    
+                     <tr>
+                        <td>Montserrat Camacho Jimenez</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>22258465</td>
+                        <td>montse.camacho@gmail.com</td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+                    
+        </main>
+        <footer> <h3> Hecho por Ximena Edith Valero Maya</h3></footer>
+    
+    </body>
+</html>
